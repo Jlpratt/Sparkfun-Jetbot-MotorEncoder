@@ -10,7 +10,7 @@ This repository is tailored for modified [Sparkfun Jetbots](https://www.sparkfun
 
 #### Outside of component mounting parts there are a few other modifications to the jetbots used in the creation of this repository. These are optional and only truly affect the data found in the EncoderDataCollection/Setting_Data folder (which is part of this repository as more of a guideline, data should be taken for each Jetbot, and not used as coverall to reduce error in use.)
 1. Motor Mounting hole locations on the lower chassis board were moved back half an inch to be more central and allow for easier turning.
-2. Motors were taken from the original yellow hobby motors (1) and used to replace the motors within the Hobby Motors with Encoders (2), as the Hobby Motors with Encoders (2) were found to be less powerful than the original Hobby Motors (1).
+2. Motors were taken from the original yellow hobby motors (1) and used to replace the motors within the Hobby Motors with Encoders (2), as the Hobby Motors with Encoders (2) were found to be less powerful than the original Hobby Motors (1). [Guide here](https://github.com/Jlpratt/Sparkfun-Jetbot-MotorEncoder/blob/9ddc63910c4ba56080ec4a598fcfce3009fc2665/Jetbot%20Motor%20Swap.pdf)
 3. Foam within original wheel interior was replaced with 3D printed inserts
 
 ### Hardware Setup is as follows:
