@@ -1,8 +1,34 @@
 # Sparkfun-Jetbot-MotorEncoder
 Motor Encoder Code for Jetbots using Sparkfun hardware
 
-## Hardware and setup:
+## Hardware and Setup:
+This repository is taylored for modified [Sparkfun Jetbots](https://www.sparkfun.com/products/18486)
 
+### The two major modifications are as follows:
+1. Addition of a [Sparkfun qwiic GPIO board](https://www.sparkfun.com/products/17047)
+2. Replacement of the hobby motors with the [Hobby Motor with Encoder](https://www.sparkfun.com/products/16413) 
+
+#### Outside of component mounting parts there are a few other modifications to the jetbots used in the creation of this repository. These are optional and only truly affect the data found in the EncoderDataCollection/Setting_Data folder (which is part of this repository as more of a guidline, data should be taken for each Jetbot, and not used as coverall to reduce error in use.) 
+1. Motor Mounting hole locations on the lower chasis board were moved back half an inch to be more central and allow for easier turning.
+2. Motors were taken from the original yellow hobby motors (1) and used to replace the motors within the Hobby Motors with Encoders (2), as the Hobby Motors with Encoders (2) were found to be less powerful than the original Hobby Motors (1).
+3. Foam within original wheel interior was replaced with 3D printed inserts
+
+### Hardware Setup is as follows:
+The Left Hall encoder output signals 1 and 2 go to the gpio pinouts 6 and 7 respectively
+
+The Right Hall encoder output signals 1 and 2 go to the gpio pinouts 4 and 5 respectively
+
+#### Note: The documentaion for Hobby Motor with Encoder wiring setup is incorrect depending on the source used for setup (ie. Sparkfun's pinout sheet is in reverse order). 
+
+Pin 1 (brown wire) connects to the GPIO ground. 
+
+Pins 2 and 3 (red and orange wires respectively) corespond to encoder outputs 1 and 2 respectively. 
+
+Pin 4 (yellow wire) coresponds to the GPIO 3V connection. 
+
+Pins 5 and 6 (green and blue wires respectively) corespond to the desired motor driver pins for the motor.  
+
+## Sparkfun Hall-Encoder Code Information
 encoder.py contains an encoder class which can be used in combination with threading/multiprocessing to return the angular velocity of both wheels at once.
 
 The EncoderDataCollection contains the file NewEncoderCode.py which is the code used for aquiring velocity information over an array of motor settings and saving them to individual .csv files for each setting. 
