@@ -31,7 +31,7 @@ Pins 5 and 6 (green and blue wires respectively) correspond to the desired motor
 ## Sparkfun Hall-Encoder Code Information
 encoder.py contains an encoder class which can be used in combination with threading/multiprocessing to return the angular velocity of both wheels at once.
 
-The EncoderDataCollection contains the file NewEncoderCode.py which is the code used for aquiring velocity information over an array of motor settings and saving them to individual .csv files for each setting.
+The EncoderDataCollection contains the files NewEncoderCode.py and numbrot.py. NewEncoderCode.py is used for aquiring velocity information over an array of motor settings and saving them to individual .csv files for each setting.
 
 Note: NewEncoderCode.py is the most up to date/functional file currently, and can be used as a template for multiprocessing and exporting data. The code avoids .csv exportation issues found in the files within the Outdated Encoder Code folder, in which data would only export for one motor/one motor at a time.
 
