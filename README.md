@@ -1,6 +1,8 @@
 # Sparkfun-Jetbot-MotorEncoder
 Motor Encoder Code for Jetbots using Sparkfun hardware
 
+## Hardware and setup:
+
 encoder.py contains an encoder class which can be used in combination with threading/multiprocessing to return the angular velocity of both wheels at once.
 
 The EncoderDataCollection contains the file NewEncoderCode.py which is the code used for aquiring velocity information over an array of motor settings and saving them to individual .csv files for each setting. 
